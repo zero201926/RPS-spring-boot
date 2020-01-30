@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel = "stylesheet" type = "text/css" href = "/stylesheet.css" />
+</head>
+<body>
+<h1 class="glow">Player: <x th:text="${name}"></x></h1>
+<h2 class="glow"> <p th:text="${play}"></p> </h2>
+<h3 class="glow">Play again? <x th:text="${name}"></x></h3>
+<button class="block" onclick="goBack()">Yes!</button>
+<form action="/end">
+    <input class="block" name="choice" type="submit" value="NO">
+</form>
+<script>
+      function goBack() {
+        window.history.back();
+      }
+      </script>
+</body>
+</html>

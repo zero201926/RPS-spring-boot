@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" type = "text/css" href = "/stylesheet.css" />
+</head>
+
+<body>
+
+<h1 class="glow">>are you ready to play <p th:text="${name}"></p></h1>
+<form action="play-choice" method="post">
+
+        <h2 class="glow">Choose: Rock, paper or scissors</h2>
+
+    <input class="block" name="choice" type="submit" value="rock">
+    <input class="block" name="choice" type="submit" value="paper">
+    <input class="block" name="choice" type="submit" value="scissors">
+
+</form>
+</body>
+</html>
